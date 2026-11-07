@@ -1,0 +1,21 @@
+$ python3 manage.py runserver 8001
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 07, 2026 - 13:14:34
+Django version 6.1.3, using settings 'djangoproj.settings'
+Starting WSGI development server at http://127.0.0.1:8001/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/6.1/howto/deployment/
+[07/Nov/2026 13:14:45] "GET / HTTP/1.1" 200 3103
+[07/Nov/2026 13:14:45] "GET /contact/ HTTP/1.1" 200 2420
+[07/Nov/2026 13:14:45] "GET /about/ HTTP/1.1" 200 3657
+[07/Nov/2026 13:14:45] "GET /login/ HTTP/1.1" 200 652
+[07/Nov/2026 13:14:45] "GET /register/ HTTP/1.1" 200 652
+[07/Nov/2026 13:14:45] "GET /dealers/ HTTP/1.1" 200 652
+[07/Nov/2026 13:14:45] "GET /dealer/15 HTTP/1.1" 200 652
+[07/Nov/2026 13:14:45] "GET /postreview/15 HTTP/1.1" 200 652
+[07/Nov/2026 13:14:45] "GET /static/style.css HTTP/1.1" 200 1918
