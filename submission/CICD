@@ -1,0 +1,103 @@
+GitHub Actions - Workflow run summary
+Repository: snsyaqirah/Cars-Dealership
+Workflow:   Lint Code (.github/workflows/main.yml)
+Trigger:    push to branch main
+Commit:     6119d1e Add initial Django project structure and frontend styles
+Run:        https://github.com/snsyaqirah/Cars-Dealership/actions/runs/42376264349
+Status:     ✅ Success
+
+Jobs
+  ✅ Lint Python Files        succeeded in 9s
+  ✅ Lint JavaScript Files    succeeded in 10s
+
+==================================================
+✅ Lint Python Files
+==================================================
+✅ Set up job
+   Runner Image: ubuntu-26.04
+   Download action repository 'actions/checkout@v4'
+   Download action repository 'actions/setup-python@v5'
+   Complete job name: Lint Python Files
+
+✅ Checkout Repository
+   Run actions/checkout@v4
+   Syncing repository: snsyaqirah/Cars-Dealership
+   Switched to a new branch 'main'
+   6119d1e7a4219812e70b13d96bcb8a3f23e6ad86
+
+✅ Set up Python
+   Run actions/setup-python@v5
+     python-version: 3.12
+   Successfully set up CPython (3.12.16)
+
+✅ Install dependencies
+   Run python -m pip install --upgrade pip
+       pip install flake8
+   Successfully installed pip-26.3
+   Successfully installed flake8-7.5.0 mccabe-0.7.0 pycodestyle-2.15.0 pyflakes-4.1.0
+
+✅ Print working directory
+   Run pwd
+   /home/runner/work/Cars-Dealership/Cars-Dealership
+
+✅ Run Linter
+   Run pwd
+       # This command finds all Python files recursively and runs flake8 on them
+       find . -name "*.py" -not -path "*/migrations/*" -exec flake8 {} +
+       echo "Linted all the python files successfully"
+   /home/runner/work/Cars-Dealership/Cars-Dealership
+   Linted all the python files successfully
+
+✅ Post Set up Python
+   Post job cleanup.
+
+✅ Post Checkout Repository
+   Post job cleanup.
+   [command]/usr/bin/git version
+   git version 2.56.0
+
+✅ Complete job
+   Cleaning up orphan processes
+
+==================================================
+✅ Lint JavaScript Files
+==================================================
+✅ Set up job
+   Runner Image: ubuntu-26.04
+   Download action repository 'actions/checkout@v4'
+   Download action repository 'actions/setup-node@v4'
+   Complete job name: Lint JavaScript Files
+
+✅ Checkout Repository
+   Run actions/checkout@v4
+   Syncing repository: snsyaqirah/Cars-Dealership
+   Switched to a new branch 'main'
+   6119d1e7a4219812e70b13d96bcb8a3f23e6ad86
+
+✅ Install Node.js
+   Run actions/setup-node@v4
+     node-version: 20
+   Acquiring 20.20.2 - x64
+   node: v20.20.2
+   npm: 10.8.2
+
+✅ Install JSHint
+   Run npm install jshint --global
+   added 31 packages in 1s
+
+✅ Run Linter
+   Run # This command finds all JavaScript files recursively and runs JSHint on them
+       find ./server/database -name "*.js" -exec jshint {} +
+       echo "Linted all the js files successfully"
+   Linted all the js files successfully
+
+✅ Post Install Node.js
+   Post job cleanup.
+
+✅ Post Checkout Repository
+   Post job cleanup.
+   [command]/usr/bin/git version
+   git version 2.56.0
+
+✅ Complete job
+   Cleaning up orphan processes

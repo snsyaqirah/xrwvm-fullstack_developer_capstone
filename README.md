@@ -1,4 +1,8 @@
-# Cars Dealership - Full Stack Application Development Capstone
+# xrwvm-fullstack_developer_capstone
+
+**Repository name:** xrwvm-fullstack_developer_capstone
+
+**Project name:** Cars Dealership - Full Stack Application Development Capstone Project
 
 Best Cars is a national car retailer in the U.S. This project is a web application that lists the dealership branches across the country, shows the reviews for each dealer, and lets registered users post their own reviews. Every review goes through a sentiment analyzer so visitors can quickly see if it is positive, neutral or negative.
 
